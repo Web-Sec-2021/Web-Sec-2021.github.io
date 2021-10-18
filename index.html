@@ -2,91 +2,47 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - CSS Eevee</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
+  <title>CodePen - Mini Discord</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="eevee">
-  <div class="body">
-    <div class="head">
-      <div class="ears">
-        <div class="ear">
-          <div class="lobe"></div>
-        </div>
-        <div class="ear">
-          <div class="lobe"></div>
-        </div>
-      </div>
-      <div class="face">
-        <div class="eyes">
-          <div class="eye">
-            <div class="eyelid"></div>
-          </div>
-          <div class="eye">
-            <div class="eyelid"></div>
-          </div>
-        </div>
-        <div class="nose"></div>
-        <div class="mouth"></div>
-      </div>
-    </div>
-    <div class="chest">
-      <div class="fur">
-        <div class="patch"></div>
-      </div>
-      <div class="fur">
-        <div class="patch"></div>
-      </div>
-      <div class="fur">
-        <div class="patch"></div>
-      </div>
-    </div>
-    <div class="legs">
-      <div class="leg">
-        <div class="inner-leg"></div>
-      </div>
-      <div class="leg">
-        <div class="inner-leg"></div>
-      </div>
-      <div class="leg">
-        <div class="inner-leg"></div>
-      </div>
-      <div class="leg">
-        <div class="inner-leg"></div>
-      </div>
-    </div>
-    <div class="tail">
-      <div class="tail">
-        <div class="tail">
-          <div class="tail">
-            <div class="tail">
-              <div class="tail -end"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div id="login">
+  <input type = "text" id="logemail" placeholder="Login with Email"/>
+  <input type="password" id="logpass" placeholder="Login Password"/>
+  <button type="button" id="login">Click Here To Login</button>
+    <h2>
+    No Account? Register Now.
+  </h2>
+  <button id="goReg"> Register</button>
 </div>
-
-<div class="dex">
-  <div class="heading"><div class="pokeball"></div><span>133</span><strong>Eevee</strong></div>
-  <div class="info"><strong>Seen:</strong> 33</div>
-  <div class="info"><strong>Caught:</strong> 33</div>
-  <br />
-  <div class="info"><strong>Weight:</strong> 6.5kg</div>
-  <div class="info"><strong>Height:</strong> 0.3m</div>
-  <br />
-  <div class="info"><strong>Type:</strong> Normal</div>
-  <div class="subheading">Evolution Pokemon</div>
-  <p>Eevee has an unstable genetic makeup that suddenly mutates due to the environment in which it lives. Radiation from various stones causes this Pokémon to evolve.</p>
-  <div class="subheading">Made by David Khourshid</div>
-  <div class="info"><strong>Twitter:</strong> <a href="https://twitter.com/davidkpiano">@davidkpiano</a></div>
+<div id="register">
+  <input type="text" id="regemail" placeholder="Register Email"/>
+  <input type = "text" id="username" placeholder="Register Username">
+  <input type="password" id="regpass1" placeholder="Register Password"/>
+  <input type="password" id="regpass2" placeholder="Confirm Password"/>
+  <button type="button" id="register">Click Here To Register</button>
+  <h2>
+    Have account? Log in now.
+  <button id="goLog"> Login</button>
+</div>
+<div id="home">
+  <h1 id="header"> Welcome to the home chat</h1>
+  <ul id="chats"></ul>
+  <form id="form">
+    <input id="text"></input>
+    <button id="send_message"> Send </button>
+    <button id="logout">Logout</button>
+  </form>
+  <hr>
+</div>
+<div id="allChannels">
+  <ul id="channels"> </ul>
+  <button id="createPage"> Create New Page </button>
 </div>
 <!-- partial -->
-  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script type="module" src="./script.js"></script>
+
 </body>
 </html>
